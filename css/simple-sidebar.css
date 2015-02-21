@@ -130,3 +130,36 @@
     position: absolute;
     margin: 18px 0px 0px 30px;
 }
+
+[class*="sidebar"], .title {
+    font-family: Open Sans;
+    font-weight: bold;
+}
+
+.images {
+    margin-left: -20px;
+    position: relative;
+    z-index: 1001;
+}
+
+.cover {
+    max-height: 200px;
+    overflow: hidden;    
+}
+
+.cover-photo {
+    position: relative;
+    width: 250px;
+}
+
+.profile {
+    height: 50px;   
+}
+
+.profile-picture {
+    position: relative;
+    width: 100px;
+    top: -50px;
+    left: 90px;
+    box-shadow: 2px 5px 10px 1px black;
+}
