@@ -2,7 +2,7 @@
 
 ## Dashboard for CLOUD
 
-Visit [our blog](blog.licua.de) for more information about the project CLOUD.
+Visit [our blog](http://blog.licua.de) for more information about the project CLOUD.
 
 ## Used plugins & templates
 
