@@ -130,13 +130,14 @@
 }
 
 /* own style */
+
 .sidebar-brand .title {
     font-size: 30px;
     position: absolute;
     margin: 18px 0px 0px 30px;
 }
 
-[class*="sidebar"], .title {
+[class*="sidebar"], .title, .volume, .music-control {
     font-family: Open Sans;
     font-weight: bold;
 }
@@ -152,7 +153,7 @@
     overflow: hidden;    
 }
 
-.cover-photo {
+.cover-photo:first-of-type {
     position: relative;
     width: 250px;
 }
@@ -167,4 +168,101 @@
     top: -50px;
     left: 90px;
     box-shadow: 2px 5px 10px 1px black;
+}
+
+.huge {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.glyphicon-huge {
+    font-size: 50px;   
+}
+
+/* panel green */
+.panel-green {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFF;
+    border-color: #d1d1d1; 
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 4px 0px 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.panel-green > .panel-heading {
+    background-color: #19AA8E;
+    color: white;
+    border-radius: 0px;
+}
+
+.panel-green > a {
+    color: #19AA8E;
+}
+
+.panel-green > .panel-heading:hover {
+    background-color: #38B89F;
+}
+
+/* panel red */
+/*.panel-red {
+    border-color: #e33f3f;
+}   
+
+.panel-red > .panel-heading {
+    background-color: #e33f3f;
+    color: white;
+}
+
+.panel-red > a {
+    color: #e33f3f;
+}
+
+.panel-red > .panel-heading:hover {
+    background-color: #FF5F4E;
+}
+*/
+/* panel orange */
+/*.panel-orange {
+    border-color: #FFAF26;
+}
+
+.panel-orange > .panel-heading {
+    background-color: #FFAF26;
+    color: white;
+}
+
+.panel-orange > a {
+    color: #FFAF26;   
+}
+
+.panel-orange > .panel-heading:hover {
+    background-color: #FFBE4E;
+}
+*/
+/* panel blue */
+/*.panel-blue {
+    border-color: #275EAF;
+}
+
+.panel-blue > .panel-heading {
+    background-color: #275EAF;
+    color: white;
+}
+
+.panel-blue > a {
+    color: #275EAF;   
+}
+
+.panel-blue > .panel-heading:hover {
+    background-color: #4575BC;
+}
+*/
+
+.glyphicon-download {
+    transform: rotate(-90deg);
 }

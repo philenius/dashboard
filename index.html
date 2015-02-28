@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Simple Sidebar - Start Bootstrap Template</title>
-
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 </head>
-
 <body>
-
-    <div id="wrapper">
+    
+	<div id="wrapper">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -77,30 +71,142 @@
                         <h1>Simple Sidebar</h1>
                         <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+                            <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span> Menu
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+                
+                <hr>
+                
+                <div class="row">
+                    
+                    <div class="col-lg-2">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="glyphicon glyphicon-user glyphicon-huge" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-xs-10 text-right">
+                                        <div class="huge">26</div>
+                                        <div class="">User are registered.</div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View details</span>
+                                    <span class="glyphicon glyphicon-download pull-right" aria-hidden="true"></span>
+                                    <span class="clearfix"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="glyphicon glyphicon-music glyphicon-huge" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-xs-10 text-right">
+                                        <div class="huge">245</div>
+                                        <div class="">Songs are stored in the database.</div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View details</span>
+                                    <span class="glyphicon glyphicon-download pull-right" aria-hidden="true"></span>
+                                    <span class="clearfix"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="glyphicon glyphicon-headphones glyphicon-huge" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-xs-10 text-right">
+                                        <div class="huge">Coldplay - Magic</div>
+                                        <div class="">is currently played.</div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View details</span>
+                                    <span class="glyphicon glyphicon-download pull-right" aria-hidden="true"></span>
+                                    <span class="clearfix"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="glyphicon glyphicon-calendar glyphicon-huge" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-xs-10 text-right">
+                                        <div class="huge">Birthday-Party</div>
+                                        <div class="">20th february, 10:00 - 15:00</div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View details</span>
+                                    <span class="glyphicon glyphicon-download pull-right" aria-hidden="true"></span>
+                                    <span class="clearfix"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                                        
+                </div> <!-- end row -->
+				
+			</div>  <!-- end container fluid -->
+        
+		</div>  <!-- end page-content-wrapper -->
+    
+	</div>  <!-- end wrapper -->
+	
+	<!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
+    
+    <script type="text/javascript">
+        
+        $i = 1;
+        $('.glyphicon-cloud').click(function() {
+        
+            $('.cover-photo').fadeOut(1000, function() {
+                $('.cover-photo').attr('src','img/cover' + $i + '.jpg');
+            }).fadeIn(1000);
+            if ($i == 10) {
+                $i = 1;
+            } else {
+                $i++;
+            }
+        });
+        
+       $('#menu-toggle').click(function(e) {
+       e.preventDefault();
+       $('#wrapper').toggleClass('toggled');
     });
+        
     </script>
-
 </body>
-
 </html>
