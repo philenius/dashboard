@@ -1,4 +1,4 @@
 # dashboard
-Dashboard for CLOUD
+<h1>Dashboard for CLOUD</h1>
 
-Visit blog.licua.de for more information about the project CLOUD. 
+Visit <a href="blog.licua.de">licua.de</a> for more information about the project CLOUD. 
