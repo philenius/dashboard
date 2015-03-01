@@ -72,9 +72,10 @@
     transition: border-left-width 0.4s;
 }
 
-.sidebar-nav li a:hover {
+.sidebar-nav li a:hover,
+.sidebar-nav li.active {
     text-decoration: none;
-    color: #fff;
+    color: #fff;  
     background-color: #293846;
     border-left-style: solid;
     border-left-width: 8px;
@@ -86,7 +87,7 @@
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
-    text-decoration: none;
+    text-decoration: none;;
 }
 
 .sidebar-nav > .sidebar-brand {
@@ -265,4 +266,62 @@
 
 .glyphicon-download {
     transform: rotate(-90deg);
+}
+
+
+/* infobox */
+.infobox {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFF;
+    border-color: #E7EAEC;
+    border-image: none;
+    border-style: solid none;
+    border-width: 4px 0px 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: white;
+    color: #676A6C;
+}
+
+.infobox-heading {
+    padding: 0px 15px 0px 15px;
+}
+
+.infobox h3 {
+    font-size: 14px;
+    font-weight: bold;   
+}
+
+.infobox .label {
+    font-size: 10px;
+    font-weight: bolder;
+    border-radius: 0.25em;
+    background-color: #38B89F;
+    position: relative;
+    top: 15px;
+    letter-spacing: 0.1em;
+}
+
+.infobox > hr {
+    margin: 0px;
+}
+
+.infobox-content {
+    padding: 5px 15px 5px 15px;    
+}
+
+.infobox-content > .title {
+    font-size: 25px;
+}
+
+.infobox-footer {
+    padding: 10px 15px;
+    color: #38B89F;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
