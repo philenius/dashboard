@@ -7,3 +7,4 @@ Visit [our blog](http://blog.licua.de) for more information about the project CL
 ## Used plugins & templates
 
 * [Simple Sidebar](http://startbootstrap.com/template-overviews/simple-sidebar/) template by Start Bootstrap
+* [jQuery Knob] (http://anthonyterrien.com/knob/) downward compatible, touchable, jQuery dial
