@@ -1,19 +1,6 @@
 @font-face {
 	font-family: Open Sans;
-	src: url('../fonts/OpenSans-Regular.ttf');
-}
-
-@font-face {
-	font-family: Open Sans Light;
 	src: url('../fonts/OpenSans.ttf');
-}
-
-* {
-    font-family: Open Sans;
-}
-
-.light {
-    font-family: Open Sans Light;
 }
 
 #wrapper {
@@ -164,7 +151,7 @@
 
 .cover {
     max-height: 200px;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 .cover-photo:first-of-type {
@@ -173,7 +160,7 @@
 }
 
 .profile {
-    height: 50px;
+    height: 50px;   
 }
 
 .profile-picture {
@@ -337,59 +324,4 @@
     border-bottom: 1px solid #ddd;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-}
-
-/* green button */
-.btn-green-circle {
-    width: 30px;
-    heigth: 30px;
-    padding: 6px 0px;
-    border-radius: 50%;
-    font-size: 12px;
-    line-height: 1.42875;
-    box-shadow: 1px 3px 0px 0.01px #2F4050;
-}
-
-.btn-circle-xl:focus, .btn-circle:focus, .btn-green:focus {
-    outline: 0 !important;
-}
-
-.btn-circle-xl {
-    width: 70px;
-    height: 70px;
-    padding: 10px 16px;
-    border-radius: 50%;
-    font-size: 24px;
-    line-height: 1.33;
-}
-
-.btn-green {
-    text-align: center;
-    background-color: #38B89F;
-    border-color: #38B89F;
-    color: white;
-    box-shadow: 0px 2px 0px 0.01px #2F4050;
-}
-
-.btn-green:hover {
-    background-color: #49C4AB;
-    color: white;
-}
-
-.btn-green:active {
-    color: #2F4050;
-    box-shadow: 0px 0px 0px 0px #2F4050;
-}
-
-.btn-green.active {
-    color: #2F4050;
-}
-
-.btn-green.active:hover {
-    box-shadow: 0px 0px 0px 0px #2F4050;    
-}
-
-.music-control {
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
