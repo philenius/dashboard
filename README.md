@@ -1,4 +1,4 @@
-# [Dashboard]
+# Dashboard
 
 ## Dashboard for CLOUD
 
@@ -15,3 +15,5 @@ Visit [our blog](http://blog.licua.de) for more information about the project CL
 * [Touch Punch] (http://touchpunch.furf.com/) brings touch support for jQuery UI
 * [Morris.js] (http://morrisjs.github.io/morris.js/) good-looking charts
 * [Toastr] (http://codeseven.github.io/toastr/) simple javascript toast notifications
+
+## View the [Demo] (http://philenius.de/dashboard)
