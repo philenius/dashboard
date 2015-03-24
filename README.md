@@ -12,3 +12,6 @@ Visit [our blog](http://blog.licua.de) for more information about the project CL
 * [Datedropper](http://felicegattuso.com/projects/datedropper/) by Felice Gattuso
 * [jQuery] (http://jquery.com/)
 * [jQuery UI] (http://jqueryui.com/)
+* [Touch Punch] (http://touchpunch.furf.com/) brings touch support for jQuery UI
+* [Morris.js] (http://morrisjs.github.io/morris.js/) good-looking charts
+* [Toastr] (http://codeseven.github.io/toastr/) simple javascript toast notifications
