@@ -35,7 +35,6 @@
     left: 250px;
     width: 0;
     margin-left: -250px;
-    
     height: 100%;
     overflow-y: auto;
     background-color: #2F4050;
@@ -54,7 +53,11 @@
     /*height: 100%;*/
     position: absolute;
     padding: 15px;
-    background-color: #F3F3F4; 
+}
+
+#page-content-wrapper, html {
+    /*background-color: #F3F3F4;*/
+    background-color: rgb(230, 230, 230);
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -143,8 +146,6 @@
     }
 }
 
-/* own style */
-
 .sidebar-brand .title {
     font-size: 30px;
     position: absolute;
@@ -206,6 +207,8 @@
     border-width: 4px 0px 0px;
     margin-bottom: 0px;
     border-radius: 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .panel-green > .panel-heading {
@@ -293,8 +296,8 @@
     border-image: none;
     border-style: solid none;
     border-width: 4px 0px 0px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     background-color: white;
     color: #676A6C;
 }
@@ -318,7 +321,7 @@
     letter-spacing: 0.1em;
 }
 
-.infobox > hr {
+.infobox hr {
     margin: 0px;
 }
 
@@ -351,7 +354,7 @@
     box-shadow: 1px 3px 0px 0.01px #2F4050;
 }
 
-.btn-circle-xl:focus, .btn-circle:focus, .btn-green:focus {
+.btn:focus {
     outline: 0 !important;
 }
 
@@ -372,27 +375,78 @@
     box-shadow: 0px 2px 0px 0.01px #2F4050;
 }
 
+.btn-red {
+    text-align: center;
+    background-color: #ED5565;
+    border-color: #ED5565;
+    color: white;
+    box-shadow: 0px 2px 0px 0.01px #2F4050;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.btn-grey {
+    text-align: center;
+    background-color: #435361;
+    border-color: #435361;
+    color: white;
+    box-shadow: 0px 2px 0px 0.01px #2F4050;
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+.btn-blue {
+    text-align: center;
+    background-color: #1c84c6;
+    border-color: #1c84c6;
+    color: white;
+    box-shadow: 0px 2px 0px 0.01px #2F4050;
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+.btn-cancel-red {
+    font-size: 12px;
+    padding: 6px 12px;
+    background-color: #D74E5C;
+    border-color: #D74E5C;
+}
+
+.btn-cancel-green {
+    font-size: 12px;
+    padding: 6px 12px;
+    background-color: #38B89F;
+    border-color: #38B89F;
+}
+
 .btn-green:hover {
     background-color: #49C4AB;
     color: white;
 }
 
-.btn-green:active {
-    color: #2F4050;
-    box-shadow: 0px 0px 0px 0px #2F4050;
+.btn-red:hover {
+    background-color: #EE6D7A;
+    color: white;
 }
 
-.btn-green.active {
-    color: #2F4050;
+.btn-grey:hover {
+    background-color: #4A5C6B;
+    color: white;
 }
 
-.btn-green.active:hover {
-    box-shadow: 0px 0px 0px 0px #2F4050;    
+.btn-blue:hover {
+    background-color: #349BDD;
+    color: white;    
+}
+
+.btn.active {
+    color: #2F4050;
+    box-shadow: 0px 0px 0px 0px;
 }
 
 .music-control {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .green a {
@@ -436,4 +490,102 @@ input[type="checkbox"]:checked + span {
 	background-position: center;
 	background-color: #19aa8d;
     background-size: 16px;
+}
+
+/* dropable list */
+.dropable > li {
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+
+#playlist, #allSongs {
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #435361;
+}
+
+/* tooltip */
+.tooltip.bottom .tooltip-inner {
+       background-color: #293846;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #293846;   
+}
+
+/* thunderstorm svg */
+.glyphicon-thunderstorm {
+    width: 100%;
+    height: 100%;
+    margin-top: -3px;
+    background: url('../icons/thunderstorm.svg') left top no-repeat;
+	background-position: center;
+    background-size: 100%;
+}
+
+.fullscreen {
+    position: fixed;
+    padding-top: 25vh;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.99;
+    background-color: #293846;
+    text-align: center;
+    font-size: 20vw;
+    color: white;
+    	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+	-moz-text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+	-webkit-text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
