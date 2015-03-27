@@ -87,14 +87,22 @@ toastr.options.onHidden = function () {
     if ($dismiss == false) {
         switch ($operation) {
                 case 0:
-                    //alert('Message to server: shutdown');
                     $('.fullscreen').show('fold', 1000);
                     break;
                 case 1:
-                    alert('Message to server: thunderstorm');
+                    alert('Message to server: thunder');
                     break;
                 case 2:
                     alert('Message to server: ledtest');
+                    break;
+                case 3:
+                    alert('Message to server: thunderstorm');
+                    break;
+                case 4:
+                    alert('Message to server: soundreactive');
+                    break;
+                case 5:
+                alert('Message to server: pulsating');
                     break;
                 default:
                     alert('error');
@@ -116,6 +124,14 @@ $('.thunderstorm').click(function () {
 
 $('.ledtest').click(function() {
    Command: toastr['success']('LED test ist starting...<br><button class="btn btn-green btn-cancel-green" onclick="$dismiss=true;">Cancel</button>'); 
+});
+
+$('.soundreactive').click(function() {
+   Command: toastr['success']('The sound reactive mode is starting...<br><button class="btn btn-green btn-cancel-green" onclick="$dismiss=true;">Cancel</button>'); 
+});
+
+$('.pulsating').click(function() {
+   Command: toastr['success']('The pulsating mode is starting...<br><button class="btn btn-green btn-cancel-green" onclick="$dismiss=true;">Cancel</button>'); 
 });
 
 // Morris chart
@@ -147,5 +163,5 @@ $('button').click(function () {
 
 // Tooltips
 $(function () {
-   $('[data-toggle="tooltip"').tooltip();
+   $('[data-toggle="tooltip"]').tooltip();
 });
