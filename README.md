@@ -16,5 +16,6 @@ Visit [our blog](http://blog.licua.de) for more information about the project CL
 * [Morris.js] (http://morrisjs.github.io/morris.js/) good-looking charts
 * [Toastr] (http://codeseven.github.io/toastr/) simple javascript toast notifications
 * [Bootstrap Filestyle] (http://markusslima.github.io/bootstrap-filestyle/) Customization of input html file for Bootstrap Twitter
+* [Stroll.js] (https://github.com/hakimel/stroll.js) A collection of CSS list scroll effects
 
 ## View the [Demo] (http://philenius.de/dashboard)
