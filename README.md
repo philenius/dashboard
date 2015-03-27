@@ -15,5 +15,6 @@ Visit [our blog](http://blog.licua.de) for more information about the project CL
 * [Touch Punch] (http://touchpunch.furf.com/) brings touch support for jQuery UI
 * [Morris.js] (http://morrisjs.github.io/morris.js/) good-looking charts
 * [Toastr] (http://codeseven.github.io/toastr/) simple javascript toast notifications
+* [Bootstrap Filestyle] (http://markusslima.github.io/bootstrap-filestyle/) Customization of input html file for Bootstrap Twitter
 
 ## View the [Demo] (http://philenius.de/dashboard)
