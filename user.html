@@ -219,6 +219,12 @@
 	<!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script>
+        // sidebar
+        $('#menu-toggle').click(function(e) {
+            e.preventDefault();
+            $('#wrapper').toggleClass('toggled');
+        });
+        // password
         $('#eye').hover(function() {
             $('#password').attr('type', 'text');
             $('#password').animate({borderColor: '#38B89F'}, 100);
