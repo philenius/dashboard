@@ -36,7 +36,6 @@
     width: 0;
     margin-left: -250px;
     height: 100%;
-    overflow-y: auto;
     background-color: #2F4050;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -550,7 +549,7 @@ body::-webkit-scrollbar-thumb
     border-bottom-color: #293846;   
 }
 
-/* thunderstorm svg */
+/* svg */
 .glyphicon-thunderstorm {
     width: 100%;
     height: 100%;
@@ -655,4 +654,40 @@ body::-webkit-scrollbar-thumb
 .input-group-addon {
     top: 0px;
     border-color: #e5e6e7;
+}
+
+.slide-menu {
+    position: absolute;
+    bottom: 20px;
+    left: 230px;
+    width: 300px;
+    height: 70px;
+    background-color: #38B89F;
+    border-radius: 20px;
+    box-shadow: -5px 0px 10px #293846;
+}
+
+.slide-button {
+    position: relative;
+    top: 20px;
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.slide-button:hover, .slide-button:focus {
+    color: white;
+    outline: none;
+}
+
+.slide-menu-entries {
+    position: relative;
+    top: -28px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.slide-menu-entries a {
+    text-decoration: none;
+    color: white;
 }
