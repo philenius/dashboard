@@ -645,6 +645,12 @@ body::-webkit-scrollbar-thumb
     overflow-x: hidden; 
 }
 
+#allSongsPlaylist {
+    height: 844px;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+
 #allUser {
     height: 420px;
     overflow-y: scroll;
@@ -659,35 +665,41 @@ body::-webkit-scrollbar-thumb
 .slide-menu {
     position: absolute;
     bottom: 20px;
-    left: 230px;
-    width: 300px;
+    left: 0px;
+    width: 230px;
     height: 70px;
-    background-color: #38B89F;
-    border-radius: 20px;
-    box-shadow: -5px 0px 10px #293846;
+    background-color: #293846;
+    box-shadow: -3px 0px 5px #1F2B35;
 }
 
 .slide-button {
-    position: relative;
+    position: absolute;
     top: 20px;
+    left: 8px;
     color: white;
     font-size: 25px;
     z-index: 1;
 }
 
-.slide-button:hover, .slide-button:focus {
-    color: white;
-    outline: none;
-}
-
 .slide-menu-entries {
     position: relative;
-    top: -28px;
+    left: 40px;
+    padding: 0;
     font-size: 20px;
     list-style-type: none;
+    background-color: #EE6D7A;
 }
 
 .slide-menu-entries a {
     text-decoration: none;
     color: white;
+}
+
+.slide-menu-entries li {
+    padding: 4.8px 2px 2px 15px;
+    transition: background-color 0.4s;
+}
+
+.slide-menu-entries li:hover {
+    background-color: #E16874;
 }

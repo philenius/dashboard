@@ -168,19 +168,11 @@ $(function () {
 
 // slide-menu
 var $open = false;
-$('#slide-button').click(function() {
-    if (!$open) {
-        $('.slide-menu').animate({left: '20px', borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px'}, 1000);
+$('.slide-button').click(function() {
+    if ($open) {
+        $('.slide-menu').animate({left: '210px', backgroundColor: '#EE6D7A'}, 1000, 'easeInOutExpo');
     } else {
-        $('.slide-menu').animate({left: '230px', borderTopLeftRadius: '20px', borderBottomLeftRadius: '20px'}, 1000);
+        $('.slide-menu').animate({left: '0px', backgroundColor: '#293846'}, 1000, 'easeInOutExpo');
     }
     $open = !$open;
-});
-$('#slide-menu').mouseenter(function() {
-    if(!$open)
-        $('#slide-menu').animate({left: '220px'}, 200);
-});
-$('#slide-menu').mouseleave(function() {
-    if (!$open)
-        $('#slide-menu').animate({left: '230px'}, 200);
 });
