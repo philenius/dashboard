@@ -136,7 +136,7 @@
                                         <h3>Basic form <small>Simple form for viewing all songs</small></h3>    
                                     </div>
                                     <div class="col-xs-5  text-right">
-                                        <div class="label label-primary">Permanent</div>
+                                        <div class="label label-primary">Permanently stored</div>
                                     </div>
                                 </div>        
                             </div>
@@ -409,7 +409,6 @@
         });
         
         $(':file').change(function(){
-            $('.file-list').empty();
             $('.file-list').append('<thead><tr><th>File Name</th><th>File Type</th><th>File Size</th></tr><thead><tbody>');
             var onlyMp3 = true;
             for (var i = 0; i < this.files.length; i++) {
