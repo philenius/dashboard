@@ -15,8 +15,7 @@ Visit [our blog](http://blog.licua.de) for more information about the project CL
 * [Touch Punch] (http://touchpunch.furf.com/) Brings touch support for jQuery UI
 * [Morris.js] (http://morrisjs.github.io/morris.js/) Good-looking charts
 * [Toastr] (http://codeseven.github.io/toastr/) Simple javascript toast notifications
-* [Bootstrap Filestyle] (http://markusslima.github.io/bootstrap-filestyle/) Customization of input html file for Bootstrap Twitter
 * [Stroll.js] (http://lab.hakim.se/scroll-effects/) A collection of CSS list scroll effects
 * [Flat Preloaders 2] (http://tympanus.net/codrops/2014/04/25/freebie-flat-style-squared-preloaders/) Flat Style Squared Preloaders from PixelBuddha
-
+* [Dropzone.js] (http://www.dropzonejs.com/) An open source library that provides drag'n'drop file uploads with image previews
 ## View the [Demo] (http://philenius.de/dashboard)
