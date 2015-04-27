@@ -3,7 +3,7 @@ var $i = 1;
 $('.changeCover').click(function () {
             
 	$('.cover-photo').effect('slide', 'slow');
-	if ($i == 10) {
+	if ($i == 11) {
         $i = 1;
     } else {
         $i++;
