@@ -166,13 +166,22 @@ $(function () {
    $('[data-toggle="tooltip"]').tooltip();
 });
 
-// slide-menu
-var $open = false;
-$('.slide-button').click(function() {
-    if ($open) {
-        $('.slide-menu').animate({left: '210px', backgroundColor: '#EE6D7A'}, 1000, 'easeInOutExpo');
-    } else {
-        $('.slide-menu').animate({left: '0px', backgroundColor: '#293846'}, 1000, 'easeInOutExpo');
-    }
-    $open = !$open;
+// clock
+$(document).ready(function() {
+    var serverTime = new Date();
+    serverTime.setHours($('.hour').text());
+    serverTime.setMinutes($('.minute').text());    
+    var clientTime = new Date();
+    if (Math.abs(clientTime - serverTime) > 600000) {
+        for (var i = 0; i < 15; i++) {
+            $('#time .infobox-footer').delay(700).animate({backgroundColor: '#E16874'}, 300);
+            $('#time .infobox-footer').animate({backgroundColor: '#435361'}, 300);
+        }
+    };
+});
+
+$('#updateTime').click(function() {
+    var update = $(this).find('.glyphicon-download');
+    update.switchClass('glyphicon-download', 'glyphicon-refresh');
+    update.addClass('rotate');
 });
