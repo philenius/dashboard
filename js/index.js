@@ -102,11 +102,13 @@ toastr.options.onHidden = function () {
                     alert('Message to server: soundreactive');
                     break;
                 case 5:
-                alert('Message to server: pulsating');
+                    alert('Message to server: pulsating');
                     break;
                 default:
                     alert('error');
         };
+    } else {
+        $('#' + id).removeClass('active');
     }
     $dismiss = false;
 };
@@ -156,9 +158,19 @@ new Morris.Area({
     resize: true
 });
 
-// button active state
-$('button').click(function () {
-    $(this).toggleClass('active')
+var id;
+// buttons active state control
+$('button').click(function() {
+    if (!$(this).hasClass('active')) {
+        id = $(this).attr('id');
+        if (id.indexOf('play') >= 0 || id.indexOf('pause') >= 0 || id.indexOf('forward') >= 0) {
+            $('div.music-control button').removeClass('active');
+            $(this).addClass('active');
+        } else {
+            $('#modes button').removeClass('active');
+            $(this).addClass('active');
+        }
+    };
 });
 
 // Tooltips
@@ -181,7 +193,5 @@ $(document).ready(function() {
 });
 
 $('#updateTime').click(function() {
-    var update = $(this).find('.glyphicon-download');
-    update.switchClass('glyphicon-download', 'glyphicon-refresh');
-    update.addClass('rotate');
+    $(this).find('.glyphicon-refresh').removeClass('glyphicon-refresh');
 });
