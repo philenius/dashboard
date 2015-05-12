@@ -18,5 +18,5 @@ Visit [our blog](http://blog.licua.de) for more information about the project CL
 * [Stroll.js] (http://lab.hakim.se/scroll-effects/) A collection of CSS list scroll effects
 * [Flat Preloaders 2] (http://tympanus.net/codrops/2014/04/25/freebie-flat-style-squared-preloaders/) Flat Style Squared Preloaders from PixelBuddha
 * [Dropzone.js] (http://www.dropzonejs.com/) An open source library that provides drag'n'drop file uploads with image previews
-
+* [User Pics] (https://dribbble.com/shots/1938508-Free-User-pics) Free user icons by Pavlo Tyshchuk
 ## View the [Demo] (http://philenius.de/dashboard)
