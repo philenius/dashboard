@@ -1,13 +1,11 @@
 .container {
-    heigth: 1500px;
-    position: relative;
     z-index: 1;
 }
 
 .wrapper {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     z-index: 1;
     background-color: #F7F7F7;
 }
@@ -93,4 +91,80 @@ th:last-child, td:last-child {
     width: 10px !important;
     padding-left: 0px !important;
     padding-right: 50px !important;
+}
+
+.genres {
+    background-color: #2F4050;
+    margin: 0px;
+    padding-top: 15px;
+}
+
+/* figures */
+div.figure {
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+div.figure img {
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+
+div.figure .gradient {
+    background: linear-gradient(45deg, #22682A 0%, #9B4A1B 40%, #3A342A 100%) repeat scroll 0% 0%;
+    opacity: 0.3;
+    position: absolute;
+    height: 100%;
+    width: 200px;
+}
+
+div.caption {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    width: 200px;
+    height: 200px;
+    padding-left: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    backface-visibility: hidden;
+}
+
+div.caption h2 {
+    position: relative;
+    float: right;
+    top: 35px;
+    margin: 10px 10px;
+    font-size: 2em;
+}
+
+div.caption p {
+    position: absolute;
+    /opacity: 0;
+    /top: 200px;
+    bottom: 10px;
+    left: 20px;
+    right: 10px;
+    text-align: right;
+}
+
+div.caption a {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    text-align: center;
+    color: white;
+    text-transform: none;
+    font-size: 0.8em;
+}
+
+.place {
+    height: 500px;
 }

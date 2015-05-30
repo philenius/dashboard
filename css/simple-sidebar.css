@@ -624,7 +624,7 @@ body::-webkit-scrollbar-thumb
 
 #overlayUpload {
     width: 95.1%;
-    height: 558px;
+    height: 510px;
     padding-top: 22%;
     text-align: center;
 }
@@ -642,7 +642,7 @@ body::-webkit-scrollbar-thumb
 }
 
 #allSongs {
-    height: 493px;
+    height: 512px;
 }
 
 #allSongsPlaylist {
@@ -660,6 +660,14 @@ body::-webkit-scrollbar-thumb
 #time {
     padding-top: 20px;
     margin-bottom: 30px;
+}
+
+#selectPlaylist {
+    font-weight: 700;
+}
+
+#ListOfSelectPlaylist div{
+    float: left;   
 }
 
 .input-group-addon {
