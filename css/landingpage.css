@@ -10,6 +10,38 @@ body {
 }
 
 /* parallax */
+@media screen and (max-width: 767px) {
+
+	.parallax {
+		perspective: none !important;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+		perspective-origin-x: 50% 50% !important;
+	}
+	
+	.parallax-layer {
+		transform-origin-x: 50% 50% 0 !important;
+	}
+	
+	.parallax-layer-base {
+		transform: none !important;
+	}
+	
+	.parallax-layer-back {
+		-webkit-transform: none !important;
+		-moz-transform: none !important;
+	}
+
+	.parallax-layer-deep {
+		transform: none !important;
+	}
+
+	.header {
+		background-image: url('../img/landing3mobile.jpg') !important;
+	}
+}
+
 .parallax {
     perspective: 1px;
     height: 100vh;
