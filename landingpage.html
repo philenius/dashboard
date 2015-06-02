@@ -14,7 +14,7 @@
 
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-    <!-- landingpage CSS -->
+    <!-- Landingpage CSS -->
     <link href="css/landingpage.css" rel="stylesheet">
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -22,361 +22,406 @@
     <![endif]-->
 </head>
 <body>
-    
-    <div class="header">
-    </div>
-    <!--<div class="row text-center"></div>-->
-    <img class="image-responsive" src="img/tape.png" alt="Responsive Image">
-    
-    <div class="row bar">
-        <div class="col-lg-3 pull-right user">
-            <img class="image-responsive img-circle user-picture" src="icons/user5.png">
-            <span class="username">John Doe</span>
-            <button type="button" class="btn btn-default dropdown">
-                <span class="glyphicon glyphicon-chevron-down"></span>
-            </button>
-            <div class="dropdownmenu" hidden>
-                <div class="list-group">
-                    <ul>
-                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Message</a>
-                        <a href="index.html" class="list-group-item"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Dashboard</a>
-                        <a href="http://cloud.licua.de" class="list-group-item">
-                            <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout
-                        </a>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="wrapper">
-        
-        <div class="container">
 
-            <div class="row">
+	<div class="parallax">
+	
+		<div class="parallax-layer parallax-layer-back">
+			<div class="header"></div>
+			<!--<img class="image-responsive" src="img/tape.png" alt="Tape" id="tape">-->
+		</div>
 
-                <div class="page-header">
-                    <h1 class="huge">Welcome to CLOUD<small></small></h1>
-                </div>
-                <div class="col-lg-12">
-                    <div class="infobox">
-                        <div class="infobox-heading">
-                            <div class="row">
-                                <div class="col-xs-7">
-                                    <h3>Current Event <small>Short description of current Event</small></h3>
-                                </div>
-                                <div class="col-xs-5  text-right">
-                                    <div class="label label-primary">Current</div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="infobox-content">
-                            <div class="title">Description:</div>
-                            <div class="info"></div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p>Hey everbody,<br>today is Lea's birthday. I wanna welcome everybody and thank you for coming!<br>
-                                        I'm happy that we're celebrating Lea's 15th birthday together with the whole family. Have a lot of fun!</p>
-                                    <p>And of course we're listening to her favourite playlist :)</p>
-                                </div>
-                            </div>
-                        </div>            
-                    </div>
-                </div>
-            
-            </div> <!-- end row -->
-            
-            <div class="row">
-                
-                <div class="col-lg-12">
-                
-                    <div class="infobox">
-                        <div class="infobox-heading">
-                            <div class="row">
-                                <div class="col-xs-7">
-                                    <h3>Current Playlist <small>List containing all songs of the current event</small></h3>    
-                                </div>
-                                <div class="col-xs-5  text-right">
-                                    <div class="label label-primary">Currently Played</div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="infobox-content table-responsive" id="playlistLandingPage">
-                            <div class="title">78 Songs</div>
-                            <div class="info"></div>
-                            <table class="table table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th class="hidden-xs">Ranking</th>
-                                        <th>Title</th>
-                                        <th>Artist</th>
-                                        <th class="hidden-xs">Genre</th>
-                                        <th class="hidden-xs">Duration</th>
-                                        <th>Likes</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th class="hidden-xs">1</th>
-                                        <td>Magic</td>
-                                        <td>Coldplay</td>
-                                        <td class="hidden-xs">Pop</td>
-                                        <td class="hidden-xs">3:14</td>
-                                        <td>23</td>
-                                        <td>
-                                            <a href="javascript:" class="green">
-                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="hidden-xs">2</th>
-                                        <td>Ink</td>
-                                        <td>Coldplay</td>
-                                        <td class="hidden-xs">Pop</td>
-                                        <td class="hidden-xs">3:40</td>
-                                        <td>18</td>
-                                        <td>
-                                            <a href="javascript:" class="green">
-                                                <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="hidden-xs">3</th>
-                                        <td>Oceans</td>
-                                        <td>Coldplay</td>
-                                        <td class="hidden-xs">Pop</td>
-                                        <td class="hidden-xs">4:11</td>
-                                        <td>10</td>
-                                        <td>
-                                            <a href="javascript:" class="green">
-                                                <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="hidden-xs">4</th>
-                                        <td>O</td>
-                                        <td>Coldplay</td>
-                                        <td class="hidden-xs">Pop</td>
-                                        <td class="hidden-xs">3:14</td>
-                                        <td>15</td>
-                                        <td>
-                                            <a href="javascript:" class="green">
-                                                <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="hidden-xs">5</th>
-                                        <td>True Love</td>
-                                        <td>Coldplay</td>
-                                        <td class="hidden-xs">Pop</td>
-                                        <td class="hidden-xs">3:40</td>
-                                        <td>14</td>
-                                        <td>
-                                            <a href="javascript:" class="green">
-                                                <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="hidden-xs">6</th>
-                                        <td>Midnight</td>
-                                        <td>Coldplay</td>
-                                        <td class="hidden-xs">Pop</td>
-                                        <td class="hidden-xs">4:11</td>
-                                        <td>10</td>
-                                        <td>
-                                            <a href="javascript:" class="green">
-                                                <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="hidden-xs">7</th>
-                                        <td>Another's Arms</td>
-                                        <td>Coldplay</td>
-                                        <td class="hidden-xs">Pop</td>
-                                        <td class="hidden-xs">3:14</td>
-                                        <td>7</td>
-                                        <td>
-                                            <a href="javascript:" class="green">
-                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="hidden-xs">8</th>
-                                        <td>A Sky Full of Stars</td>
-                                        <td>Coldplay</td>
-                                        <td class="hidden-xs">Pop</td>
-                                        <td class="hidden-xs">3:40</td>
-                                        <td>3</td>
-                                        <td>
-                                            <a href="javascript:" class="green">
-                                                <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="hidden-xs">9</th>
-                                        <td>Always In My Head</td>
-                                        <td>Coldplay</td>
-                                        <td class="hidden-xs">Pop</td>
-                                        <td class="hidden-xs">4:11</td>
-                                        <td>1</td>
-                                        <td>
-                                            <a href="javascript:" class="green">
-                                                <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                
-                </div>
-                
-            </div> <!-- end row -->
-            
-            <div class="row">
-                <div class="col-lg-3 col-sm-4 col-xs-6">
-                    
-                    <div class="figure">
-                        <img src="img/genre9.jpg" class="img-responsive">
-                        <div class="gradient"></div>
-                        <div class="caption">
-                            <h2>Pop</h2>
-                            <p>Pop arose in the 1950s and derived from rock and roll.</p>
-                            <a href="#">View more</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3 col-sm-4 col-xs-6">
-                    
-                    <div class="figure">
-                        <img src="img/genre5.jpg" class="img-responsive">
-                        <div class="gradient"></div>
-                        <div class="caption">
-                            <h2>Classic</h2>
-                            <p>Pop arose in the 1950s and derived from rock and roll.</p>
-                            <a href="#">View more</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3 col-sm-4 col-xs-6">
-                    
-                    <div class="figure">
-                        <img src="img/genre12.jpg" class="img-responsive">
-                        <div class="gradient"></div>
-                        <div class="caption">
-                            <h2>Rap</h2>
-                            <p>Pop arose in the 1950s and derived from rock and roll.</p>
-                            <a href="#">View more</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                <div class="col-lg-3 col-sm-4 col-xs-6">
-                    
-                    <div class="figure">
-                        <img src="img/genre10.jpg" class="img-responsive">
-                        <div class="gradient"></div>
-                        <div class="caption">
-                            <h2>Rock</h2>
-                            <p>Pop arose in the 1950s and derived from rock and roll.</p>
-                            <a href="#">View more</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="row" class="place"></div>
-            
-<!--
-            
-            <div class="row" class="place"></div>
-            
-            <div class="row top-buffer">
-                
-                <div class="col-lg-12">
-                
-                    <div class="row genres">
-                        <div class="col-lg-2">
-                            <img src="img/genre1.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre2.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre3.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre4.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre5.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre6.jpg" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="row genres">
-                        <div class="col-lg-2">
-                            <img src="img/genre7.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre8.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre9.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre10.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre11.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-lg-2">
-                            <img src="img/genre12.jpg" class="img-responsive">
-                        </div>
-                    </div>
-                
-                </div>
-            
-            </div> <!-- end row -->
-            -->
-        <div class="row">
-            <div class="col-xs-6 col-sm-4 col-md-3 portfolio-item">
-                    <img class="img-responsive" src="img/genre9.jpg" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 portfolio-item">
-                    <img class="img-responsive" src="img/genre9.jpg" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 portfolio-item">
-                    <img class="img-responsive" src="img/genre9.jpg" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 portfolio-item">
-                    <img class="img-responsive" src="img/genre9.jpg" alt="">
-            </div>
-        </div>
+		<div class="parallax-layer parallax-layer-base" id="parallax-container">
+		
+			<div class="row bar">
+				<div class="col-lg-3 pull-right user">
+					<img class="image-responsive img-circle user-picture" src="icons/user5.png">
+					<span class="username">John Doe</span>
+					<button type="button" class="btn btn-default dropdown">
+						<span class="glyphicon glyphicon-chevron-down"></span>
+					</button>
+					<div class="dropdownmenu" hidden>
+						<div class="list-group">
+							<ul>
+								<a href="#" class="list-group-item disabled"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Message</a>
+								<a href="index.html" class="list-group-item"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Dashboard</a>
+								<a href="http://cloud.licua.de" class="list-group-item">
+									<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout
+								</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="wrapper">
+				
+				<div class="container">
 
-        </div> <!-- end container -->
-    
-    </div> <!-- end wrapper -->
-    
-    <div class="visible-xs" id="mobile"></div>
-        
+					<div class="row">
+
+						<div class="page-header">
+							<h1 class="huge">Welcome to CLOUD<small></small></h1>
+						</div>
+						<div class="col-lg-12">
+							<div class="infobox">
+								<div class="infobox-heading">
+									<div class="row">
+										<div class="col-xs-7">
+											<h3>Current Event <small>Short description of current Event</small></h3>
+										</div>
+										<div class="col-xs-5  text-right">
+											<div class="label label-primary">Current</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<div class="infobox-content">
+									<div class="title">Description:</div>
+									<div class="info"></div>
+									<div class="row">
+										<div class="col-lg-12">
+											<p>Hey everbody,<br>today is Lea's birthday. I wanna welcome everybody and thank you for coming!<br>
+												I'm happy that we're celebrating Lea's 15th birthday together with the whole family. Have a lot of fun!</p>
+											<p>And of course we're listening to her favourite playlist :)</p>
+										</div>
+									</div>
+								</div>            
+							</div>
+						</div>
+					
+					</div> <!-- end row -->
+					
+					<div class="row">
+						
+						<div class="col-lg-12">
+						
+							<div class="infobox">
+								<div class="infobox-heading">
+									<div class="row">
+										<div class="col-xs-7">
+											<h3>Current Playlist <small>List containing all songs of the current event</small></h3>    
+										</div>
+										<div class="col-xs-5  text-right">
+											<div class="label label-primary">Currently Played</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<div class="infobox-content table-responsive" id="playlistLandingPage">
+									<div class="title">78 Songs</div>
+									<div class="info"></div>
+									<table class="table table-hover table-striped">
+										<thead>
+											<tr>
+												<th class="hidden-xs">Ranking</th>
+												<th>Title</th>
+												<th>Artist</th>
+												<th class="hidden-xs">Genre</th>
+												<th class="hidden-xs">Duration</th>
+												<th>Likes</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th class="hidden-xs">1</th>
+												<td>Magic</td>
+												<td>Coldplay</td>
+												<td class="hidden-xs">Pop</td>
+												<td class="hidden-xs">3:14</td>
+												<td>23</td>
+												<td>
+													<a href="javascript:" class="green">
+														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<th class="hidden-xs">2</th>
+												<td>Ink</td>
+												<td>Coldplay</td>
+												<td class="hidden-xs">Pop</td>
+												<td class="hidden-xs">3:40</td>
+												<td>18</td>
+												<td>
+													<a href="javascript:" class="green">
+														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<th class="hidden-xs">3</th>
+												<td>Oceans</td>
+												<td>Coldplay</td>
+												<td class="hidden-xs">Pop</td>
+												<td class="hidden-xs">4:11</td>
+												<td>10</td>
+												<td>
+													<a href="javascript:" class="green">
+														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<th class="hidden-xs">4</th>
+												<td>O</td>
+												<td>Coldplay</td>
+												<td class="hidden-xs">Pop</td>
+												<td class="hidden-xs">3:14</td>
+												<td>15</td>
+												<td>
+													<a href="javascript:" class="green">
+														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<th class="hidden-xs">5</th>
+												<td>True Love</td>
+												<td>Coldplay</td>
+												<td class="hidden-xs">Pop</td>
+												<td class="hidden-xs">3:40</td>
+												<td>14</td>
+												<td>
+													<a href="javascript:" class="green">
+														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<th class="hidden-xs">6</th>
+												<td>Midnight</td>
+												<td>Coldplay</td>
+												<td class="hidden-xs">Pop</td>
+												<td class="hidden-xs">4:11</td>
+												<td>10</td>
+												<td>
+													<a href="javascript:" class="green">
+														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<th class="hidden-xs">7</th>
+												<td>Another's Arms</td>
+												<td>Coldplay</td>
+												<td class="hidden-xs">Pop</td>
+												<td class="hidden-xs">3:14</td>
+												<td>7</td>
+												<td>
+													<a href="javascript:" class="green">
+														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<th class="hidden-xs">8</th>
+												<td>A Sky Full of Stars</td>
+												<td>Coldplay</td>
+												<td class="hidden-xs">Pop</td>
+												<td class="hidden-xs">3:40</td>
+												<td>3</td>
+												<td>
+													<a href="javascript:" class="green">
+														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<th class="hidden-xs">9</th>
+												<td>Always In My Head</td>
+												<td>Coldplay</td>
+												<td class="hidden-xs">Pop</td>
+												<td class="hidden-xs">4:11</td>
+												<td>1</td>
+												<td>
+													<a href="javascript:" class="green">
+														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						
+						</div>
+						
+					</div> <!-- end row -->
+
+					<div class="row"> <!-- genre row -->
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre1.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Pop</h2>
+									<p>Pop arose in the 1950s and derived from rock and roll.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre3.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Hits</h2>
+									<p>Hit-songs describes popular or electronic music from Europe.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre8.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Dubstep</h2>
+									<p>Dubstep is a genre of electronic dance music originated from London.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre12.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Reggae</h2>
+									<p>Reggae evolved in the 1960s from Jazz. It's often refered to as Jamaican dance music</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre13.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Rap</h2>
+									<p>Rap is defined as spoken or chanted rythming lyrics.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre6.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Blues</h2>
+									<p>Blues is a genre that originated in African-American communities in the USA.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre9.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Indie Rock</h2>
+									<p>Indie rock is a genre of alternative rock originated in UK.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre14.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Heavy Metal</h2>
+									<p>Metal is a genre of rock music that developed in the late 1960s.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre17.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Soul</h2>
+									<p>Soul music is a genre that originated in the USA in the 1950s.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre16.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Jazz</h2>
+									<p>Jazz is a genre of music that originated in African American communities.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre18.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Country</h2>
+									<p>Country music originated in Southern United States.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre19.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Electronic</h2>
+									<p>Electronic music employs electronic musical instruments and technology.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre10.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>House</h2>
+									<p>House music is a genre of electronic dance music that originated in the early 1980s.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre20.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Classical</h2>
+									<p>Classical music is art music produced or rooted in the traditions of Western music.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre22.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Rock</h2>
+									<p>Rock music is a music genre that originated as "rock and roll" in the 1950s.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+							<a class="genre">
+								<img class="img-responsive genre-image" src="img/genre21.jpg" alt="">
+								<div class="genre-gradient"></div>
+								<div class="genre-caption">
+									<h2>Hip-Hop</h2>
+									<p>Hip hop as music and culture formed during the 1970s in New York City.</p>
+								</div>
+							</a>
+						</div>
+					</div> <!-- end row -->            
+
+				</div> <!-- end container -->
+			
+			</div> <!-- end wrapper -->
+			
+			<div class="visible-xs" id="mobile"></div>
+			
+		</div> <!-- end parallax-base -->
+		
+	</div> <!-- end parallax -->
+	
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
 	<!-- jQuery UI -->
@@ -388,7 +433,7 @@
         $('.dropdown').click(function() {
             $('.dropdownmenu').toggle('slide', { direction: 'up', easing: 'easeInOutExpo'}, 1000);
         });
-        // parallax effect
+        /* parallax effect
         if ($('#mobile').is(':hidden')) {
             var $begin = window.pageYOffset;
             $(window).scroll(function() {
@@ -397,7 +442,7 @@
                 $('.header').animate({top: '+=' + (($end - $begin) / 2) + 'px'}, 0);
                 $begin = window.pageYOffset;
             });        
-        }
+        }*/
         //$('.header + img').delay(1000).animate({top: '30px'}, 1000);
         // voting
         $('[class*="glyphicon-heart"]').click(function() {

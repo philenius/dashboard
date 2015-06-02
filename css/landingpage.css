@@ -1,23 +1,56 @@
-.container {
-    z-index: 1;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .wrapper {
-    position: relative;
     width: 100%;
-    height: 200vh;
-    z-index: 1;
     background-color: #F7F7F7;
 }
 
+/* parallax */
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective-origin-x: 100%;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin-x: 100%;
+}
+
+.parallax-layer-base {
+    transform: translateZ(0);
+}
+
+#parallax-container {
+    top: 60vh;
+}
+
+.parallax-layer-back {
+    -webkit-transform: translateZ(-1px) scale(2);
+    -moz-transform: translateZ(-1px) scale(2.1);
+}
+
+.parallax-layer-deep {
+    transform: translateZ(-2px) scale(3);
+}
+
 .header {
-    background-image: url('../img/landing2.jpg');
+    background-image: url('../img/landing3.jpg');
     background-size: cover;
-    /*background-position: 0px -300px;*/
+    background-position: 0px -300px;
     background-repeat: no-repeat;
     position: relative;
-    z-index: 0;
-    height: 60vh;
+    height: 100vh;
 }
 
 .header + img {
@@ -33,7 +66,6 @@
     margin: 0;
     background-color: white;
     position: relative;
-    z-index: 10;
 }
 
 .username {
@@ -83,6 +115,12 @@
     font-size: 1.8em;
 }
 
+#tape {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 #playlistLandingPage {
     height: 600px;
 }
@@ -100,36 +138,31 @@ th:last-child, td:last-child {
 }
 
 /* figures */
-div.figure {
+.genre-item {
+    overflow: hidden;
     padding: 0;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+    margin: 0px;
 }
 
-div.figure img {
-    position: relative;
-    min-height: 100%;
-    max-width: 100%;
+.genre-image {
     float: left;
-    overflow: hidden;
-    text-align: center;
 }
 
-div.figure .gradient {
+.genre-gradient {
     background: linear-gradient(45deg, #22682A 0%, #9B4A1B 40%, #3A342A 100%) repeat scroll 0% 0%;
-    opacity: 0.3;
+    opacity: 0.2;
     position: absolute;
     height: 100%;
-    width: 200px;
+    width: 100%;
 }
 
-div.caption {
+.genre-caption {
     position: absolute;
     top: 0px;
-    left: 15px;
+    right: 15px;
     width: 200px;
-    height: 200px;
+    height: 100%;
+    text-align: right;
     padding-left: 2em;
     color: white;
     text-transform: uppercase;
@@ -137,7 +170,7 @@ div.caption {
     backface-visibility: hidden;
 }
 
-div.caption h2 {
+.genre-caption h2 {
     position: relative;
     float: right;
     top: 35px;
@@ -145,24 +178,12 @@ div.caption h2 {
     font-size: 2em;
 }
 
-div.caption p {
+.genre-caption p {
     position: absolute;
-    /opacity: 0;
-    /top: 200px;
-    bottom: 10px;
+    bottom: 20px;
     left: 20px;
     right: 10px;
     text-align: right;
-}
-
-div.caption a {
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    text-align: center;
-    color: white;
-    text-transform: none;
-    font-size: 0.8em;
 }
 
 .place {
