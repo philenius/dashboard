@@ -41,6 +41,10 @@ body {
 		background-image: url('../img/landing3mobile.jpg') !important;
         background-position: 0px 0px !important;
 	}
+    
+    .genre-caption h2 {
+        top: 0px !important;
+    }
 }
 
 .parallax {
