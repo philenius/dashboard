@@ -471,6 +471,10 @@ a.red {
     color: #EE6D7A;
 }
 
+a.red:hover, a.green:hover {
+    text-decoration: none;   
+}
+
 a.grey {
     color: #676A6C; 
     transition: color 0.4s;
