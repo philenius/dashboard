@@ -174,19 +174,32 @@
                                 </div>                               
                             </div>
                             <hr>
-                            <div class="infobox-content">
+<div class="infobox-content">
                                 <div class="title">Admin Password</div>
-                                <form>
-                                    <div class="form-group input-group">
-                                        <input type="password" class="form-control" value="loremipsum" aria-describedby="eye" id="password">
-                                        <span class="glyphicon glyphicon-eye-open input-group-addon" id="eye"></span>
+                                <form method="POST" action="/changePassword">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <div class="form-group input-group">
+                                                <label for="password">New password</label>
+                                                <input type="password" class="form-control" value="loremipsum" aria-describedby="eye" id="password" name="password">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <div class="form-group input-group">
+                                                <label for="password_confirmation">Password confirmation</label>
+                                                <input type="password" class="form-control" value="loremipsum" aria-describedby="eye" id="password_confirmation" name="password_confirmation">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-green">Change Password</button>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <div class="form-group input-group">
+                                                <button type="submit" class="btn btn-red" disabled>Change Password</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </form>
-                            </div>
-                            <a href="#">
+                            </div>                            <a href="#">
                                 <div class="infobox-footer">
                                     <span class="pull-left">Please select a secure password.</span>
                                     <span class="clearfix"></span>
@@ -214,6 +227,27 @@
         $('#menu-toggle').click(function(e) {
             e.preventDefault();
             $('#wrapper').toggleClass('toggled');
+        });
+                function comparePassword($pw1, $pw2) {
+            $submitButton = $('button[type="submit"]');
+            if ($pw1 == $pw2) {
+                $submitButton.attr('class', 'btn btn-green');
+                $submitButton.removeAttr('disabled');
+                console.log($pw1 + " " + $pw2);
+            } else {
+                $submitButton.attr('class', 'btn btn-red');
+                $submitButton.attr('disabled', 'true');
+            }
+        }
+        $('#password').keyup(function() {
+            $pw1 = $(this).val();
+            $pw2 = $('#password_confirmation').val();
+            comparePassword($pw1, $pw2);
+        });
+        $('#password_confirmation').keyup(function() {
+            $pw1 = $(this).val();
+            $pw2 = $('#password').val();
+            comparePassword($pw1, $pw2);
         });
         // password
         $('#eye').hover(function() {
