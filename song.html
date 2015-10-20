@@ -11,8 +11,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-    <!-- Stroll CSS -->
-    <link href="css/stroll.min.css" rel="stylesheet">
     <!-- Dropzone CSS -->
     <link href="css/dropzone.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -139,7 +137,14 @@
                             </div>
                             <hr>
                             <div class="infobox-content">
-                                <div class="title">All Songs</div>
+                                <div class="title">All Songs
+                                    <span class="orderby pull-right">Order by:
+                                        <select id="orderby">
+                                            <option value="title">Title</option>
+                                            <option value="artist">Artist</option>
+                                        </select>
+                                    </span>
+                                </div>
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <ul class="list-group flip" id="allSongs">
@@ -428,6 +433,11 @@
         function reload() {
             location.reload();
         };
+        // Order songs by title / artist
+        $('#orderby').change(function() {
+            $order = $('#orderby').val();
+            console.log($order);
+        });
     </script>
 </body>
 </html>

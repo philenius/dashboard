@@ -625,14 +625,15 @@ body::-webkit-scrollbar-thumb
                0 20px 20px rgba(0,0,0,.15);
 }
 
-
 #overlayUpload {
     width: 95.1%;
     height: 510px;
     padding-top: 22%;
     text-align: center;
 }
-#uploadList, #playlist, #allSongs, #allSongsPlaylist, #allPlaylists, #allUser {
+
+/* Size of info boxes */
+#uploadList, #playlist, #allSongs, #allSongsPlaylist, #allPlaylists, #allUser, #currentPlaylist {
     overflow-y: scroll;
     overflow-x: hidden;    
 }
@@ -672,6 +673,14 @@ body::-webkit-scrollbar-thumb
 
 #ListOfSelectPlaylist div{
     float: left;   
+}
+
+#currentPlaylist {
+    height: 350px;
+}
+
+#currentPlaylist td:nth-of-type(3n + 1):hover {
+    cursor: pointer;
 }
 
 .input-group-addon {
@@ -733,4 +742,15 @@ body::-webkit-scrollbar-thumb
 
 .digital span {
     font-family: Digital;
+}
+
+/* order by */
+span.orderby {
+    font-size: 16px;
+}
+
+span.orderby > select {
+    outline: 0;
+    border-color: #38B89F;
+    color: #676A6C;
 }
