@@ -142,14 +142,32 @@
 								</div>
 								<hr>
 								<div class="infobox-content">
+									
 									<div class="title">All Songs
-										<span class="orderby pull-right">Order by:
-											<select id="orderby">
-												<option value="title">Title</option>
-												<option value="artist">Artist</option>
-											</select>
+										<span class="orderby pull-right">
+											<div class="dropdown">
+												<button class="btn btn-default dropdown-toggle" type="button" id="order" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													Order by
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="order">
+													<li class="active">
+														<a href="#">Title</a>
+													</li>
+													<li>
+														<a href="#">Artist</a>
+													</li>
+													<li class="disabled">
+														<a href="#">Genre</a>
+													</li>
+													<li class="disabled">
+														<a href="#">Duration</a>
+													</li>
+												</ul>
+											</div>
 										</span>
 									</div>
+									
 									<div class="row">
 										<div class="col-lg-12">
 											<ul class="list-group flip" id="allSongs">
@@ -544,8 +562,6 @@
 										content: 'Artist: Artist No. ' + $id + '<br>' + 'Title: Title No. ' + $id + '<br>' + 'Genre: Pop' + '<br>' + 'Duration: 4:30' + '<br>',trigger: 'hover'});
 				$element.webuiPopover('show');
 			}
-			$('h1').webuiPopover({ placement:'left',
-										title:'Song info', trigger: 'hover'}).webuiPopover('show');
 		</script>
 	</body>
 </html>
