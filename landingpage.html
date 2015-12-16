@@ -1,606 +1,607 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="This is a dashboard design for the project CLOUD. It's made by HTMl5, CSS3 and a lot of JavaScript libraries.">
+		<meta name="author" content="philenius; https://github.com/philenius">
 
-    <title>CLOUD Dashboard</title>
+		<title>CLOUD Dashboard</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Landingpage CSS -->
-    <link href="css/landingpage.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 
-	<div class="parallax">
-	
-		<div class="parallax-layer parallax-layer-back">
-			<div class="header"></div>
-			<!--<img class="image-responsive" src="img/tape.png" alt="Tape" id="tape">-->
-		</div>
+		<!-- Landingpage CSS -->
+		<link href="css/landingpage.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
 
-		<div class="parallax-layer parallax-layer-base" id="parallax-container">
+		<div class="parallax">
 		
-			<div class="row bar">
-				<div class="col-lg-3 pull-right user">
-					<img class="image-responsive img-circle user-picture" src="icons/user5.png">
-					<span class="username">John Doe</span>
-					<button type="button" class="btn btn-default dropdown">
-						<span class="glyphicon glyphicon-chevron-down"></span>
-					</button>
-					<div class="dropdownmenu" hidden>
-						<div class="list-group">
-							<ul>
-								<a href="#" class="list-group-item disabled"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Message</a>
-								<a href="index.html" class="list-group-item"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Dashboard</a>
-								<a href="http://cloud.licua.de" class="list-group-item">
-									<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout
-								</a>
-							</ul>
+			<div class="parallax-layer parallax-layer-back">
+				<div class="header"></div>
+				<!--<img class="image-responsive" src="img/tape.png" alt="Tape" id="tape">-->
+			</div>
+
+			<div class="parallax-layer parallax-layer-base" id="parallax-container">
+			
+				<div class="row bar">
+					<div class="col-lg-3 pull-right user">
+						<img class="image-responsive img-circle user-picture" src="icons/user5.png">
+						<span class="username">John Doe</span>
+						<button type="button" class="btn btn-default dropdown">
+							<span class="glyphicon glyphicon-chevron-down"></span>
+						</button>
+						<div class="dropdownmenu" hidden>
+							<div class="list-group">
+								<ul>
+									<a href="#" class="list-group-item disabled"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Message</a>
+									<a href="index.html" class="list-group-item"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Dashboard</a>
+									<a href="http://cloud.licua.de" class="list-group-item">
+										<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout
+									</a>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="wrapper">
 				
-				<div class="container">
+				<div class="wrapper">
+					
+					<div class="container">
 
-					<div class="row">
+						<div class="row">
 
-						<div class="page-header">
-							<h1 class="huge">Welcome to CLOUD<small></small></h1>
-						</div>
-						<div class="col-lg-12">
-							<div class="infobox">
-								<div class="infobox-heading">
-									<div class="row">
-										<div class="col-xs-7">
-											<h3>Current Event <small>Short description of current Event</small></h3>
-										</div>
-										<div class="col-xs-5  text-right">
-											<div class="label label-primary">Current</div>
-										</div>
-									</div>
-								</div>
-								<hr>
-								<div class="infobox-content">
-									<div class="title">Description:</div>
-									<div class="info"></div>
-									<div class="row">
-										<div class="col-lg-12">
-											<p>Hey everbody,<br>today is Lea's birthday. I wanna welcome everybody and thank you for coming!<br>
-												I'm happy that we're celebrating Lea's 15th birthday together with the whole family. Have a lot of fun!</p>
-											<p>And of course we're listening to her favourite playlist :)</p>
-										</div>
-									</div>
-								</div>            
+							<div class="page-header">
+								<h1 class="huge">Welcome to CLOUD<small></small></h1>
 							</div>
-						</div>
-					
-					</div> <!-- end row -->
-					
-					<div class="row">
-						
-						<div class="col-lg-12">
-						
-							<div class="infobox">
-								<div class="infobox-heading">
-									<div class="row">
-										<div class="col-xs-7">
-											<h3>Current Playlist <small>List containing all songs of the current event</small></h3>    
-										</div>
-										<div class="col-xs-5  text-right">
-											<div class="label label-primary">Currently Played</div>
+							<div class="col-lg-12">
+								<div class="infobox">
+									<div class="infobox-heading">
+										<div class="row">
+											<div class="col-xs-7">
+												<h3>Current Event <small>Short description of current Event</small></h3>
+											</div>
+											<div class="col-xs-5  text-right">
+												<div class="label label-primary">Current</div>
+											</div>
 										</div>
 									</div>
-								</div>
-								<hr>
-								<div class="infobox-content table-responsive" id="playlistLandingPage">
-									<div class="title">78 Songs</div>
-									<div class="info"></div>
-									<table class="table table-hover table-striped">
-										<thead>
-											<tr>
-                                                <th class="visible-xs">Vote</th>
-												<th class="hidden-xs">Ranking</th>
-												<th>Title</th>
-												<th>Artist</th>
-												<th class="hidden-xs">Genre</th>
-												<th class="hidden-xs">Duration</th>
-												<th class="hidden-xs">Likes</th>
-												<th class="hidden-xs">Vote</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">1</th>
-                                                <td>Magic</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:14</td>
-												<td class="hidden-xs">23</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">2</th>
-                                                <td>Ink</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:40</td>
-												<td class="hidden-xs">18</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">3</th>
-                                                <td>Oceans</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">4:13</td>
-												<td class="hidden-xs">10</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">4</th>
-                                                <td>True Love</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:40</td>
-												<td class="hidden-xs">14</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">5</th>
-                                                <td>Mignight</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">4:11</td>
-												<td class="hidden-xs">10</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">6</th>
-                                                <td>Another's Arms</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:14</td>
-												<td class="hidden-xs">7</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">7</th>
-                                                <td>Always In My Head</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">4:11</td>
-												<td class="hidden-xs">1</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">8</th>
-                                                <td>Magic</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:14</td>
-												<td class="hidden-xs">0</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">9</th>
-                                                <td>Magic</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:14</td>
-												<td class="hidden-xs">0</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">10</th>
-                                                <td>Magic</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:14</td>
-												<td class="hidden-xs">0</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">11</th>
-                                                <td>Magic</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:14</td>
-												<td class="hidden-xs">0</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">12</th>
-                                                <td>Magic</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:14</td>
-												<td class="hidden-xs">0</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">13</th>
-                                                <td>Magic</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:14</td>
-												<td class="hidden-xs">0</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="visible-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-												<th class="hidden-xs">14</th>
-                                                <td>Magic</td>
-												<td>Coldplay</td>
-												<td class="hidden-xs">Pop</td>
-												<td class="hidden-xs">3:14</td>
-												<td class="hidden-xs">0</td>
-												<td class="hidden-xs">
-													<a href="javascript:" class="green">
-														<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-													</a>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+									<hr>
+									<div class="infobox-content">
+										<div class="title">Description:</div>
+										<div class="info"></div>
+										<div class="row">
+											<div class="col-lg-12">
+												<p>Hey everbody,<br>today is Lea's birthday. I wanna welcome everybody and thank you for coming!<br>
+													I'm happy that we're celebrating Lea's 15th birthday together with the whole family. Have a lot of fun!</p>
+												<p>And of course we're listening to her favourite playlist :)</p>
+											</div>
+										</div>
+									</div>            
 								</div>
 							</div>
 						
-						</div>
+						</div> <!-- end row -->
 						
-					</div> <!-- end row -->
+						<div class="row">
+							
+							<div class="col-lg-12">
+							
+								<div class="infobox">
+									<div class="infobox-heading">
+										<div class="row">
+											<div class="col-xs-7">
+												<h3>Current Playlist <small>List containing all songs of the current event</small></h3>    
+											</div>
+											<div class="col-xs-5  text-right">
+												<div class="label label-primary">Currently Played</div>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<div class="infobox-content table-responsive" id="playlistLandingPage">
+										<div class="title">78 Songs</div>
+										<div class="info"></div>
+										<table class="table table-hover table-striped">
+											<thead>
+												<tr>
+													<th class="visible-xs">Vote</th>
+													<th class="hidden-xs">Ranking</th>
+													<th>Title</th>
+													<th>Artist</th>
+													<th class="hidden-xs">Genre</th>
+													<th class="hidden-xs">Duration</th>
+													<th class="hidden-xs">Likes</th>
+													<th class="hidden-xs">Vote</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">1</th>
+													<td>Magic</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:14</td>
+													<td class="hidden-xs">23</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">2</th>
+													<td>Ink</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:40</td>
+													<td class="hidden-xs">18</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">3</th>
+													<td>Oceans</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">4:13</td>
+													<td class="hidden-xs">10</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">4</th>
+													<td>True Love</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:40</td>
+													<td class="hidden-xs">14</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">5</th>
+													<td>Mignight</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">4:11</td>
+													<td class="hidden-xs">10</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">6</th>
+													<td>Another's Arms</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:14</td>
+													<td class="hidden-xs">7</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">7</th>
+													<td>Always In My Head</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">4:11</td>
+													<td class="hidden-xs">1</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">8</th>
+													<td>Magic</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:14</td>
+													<td class="hidden-xs">0</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">9</th>
+													<td>Magic</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:14</td>
+													<td class="hidden-xs">0</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">10</th>
+													<td>Magic</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:14</td>
+													<td class="hidden-xs">0</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">11</th>
+													<td>Magic</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:14</td>
+													<td class="hidden-xs">0</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">12</th>
+													<td>Magic</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:14</td>
+													<td class="hidden-xs">0</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">13</th>
+													<td>Magic</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:14</td>
+													<td class="hidden-xs">0</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td class="visible-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+													<th class="hidden-xs">14</th>
+													<td>Magic</td>
+													<td>Coldplay</td>
+													<td class="hidden-xs">Pop</td>
+													<td class="hidden-xs">3:14</td>
+													<td class="hidden-xs">0</td>
+													<td class="hidden-xs">
+														<a href="javascript:" class="green">
+															<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							
+							</div>
+							
+						</div> <!-- end row -->
 
-					<div class="row"> <!-- genre row -->
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre1.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Pop</h2>
-									<p>Pop arose in the 1950s and derived from rock and roll.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre3.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Hits</h2>
-									<p>Hit-songs describes popular or electronic music from Europe.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre8.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Dubstep</h2>
-									<p>Dubstep is a genre of electronic dance music originated from London.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre12.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Reggae</h2>
-									<p>Reggae evolved in the 1960s from Jazz. It's often refered to as Jamaican dance music</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre13.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Rap</h2>
-									<p>Rap is defined as spoken or chanted rythming lyrics.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre6.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Blues</h2>
-									<p>Blues is a genre that originated in African-American communities in the USA.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre9.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Indie Rock</h2>
-									<p>Indie rock is a genre of alternative rock originated in UK.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre14.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Heavy Metal</h2>
-									<p>Metal is a genre of rock music that developed in the late 1960s.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre17.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Soul</h2>
-									<p>Soul music is a genre that originated in the USA in the 1950s.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre16.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Jazz</h2>
-									<p>Jazz is a genre of music that originated in African American communities.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre18.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Country</h2>
-									<p>Country music originated in Southern United States.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre19.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Electronic</h2>
-									<p>Electronic music employs electronic musical instruments and technology.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre10.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>House</h2>
-									<p>House music is a genre of electronic dance music that originated in the early 1980s.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre20.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Classical</h2>
-									<p>Classical music is art music produced or rooted in the traditions of Western music.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre22.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Rock</h2>
-									<p>Rock music is a music genre that originated as "rock and roll" in the 1950s.</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
-							<a class="genre">
-								<img class="img-responsive genre-image" src="img/genre21.jpg" alt="">
-								<div class="genre-gradient"></div>
-								<div class="genre-caption">
-									<h2>Hip-Hop</h2>
-									<p>Hip hop as music and culture formed during the 1970s in New York City.</p>
-								</div>
-							</a>
-						</div>
-					</div> <!-- end row -->            
+						<div class="row"> <!-- genre row -->
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre1.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Pop</h2>
+										<p>Pop arose in the 1950s and derived from rock and roll.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre3.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Hits</h2>
+										<p>Hit-songs describes popular or electronic music from Europe.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre8.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Dubstep</h2>
+										<p>Dubstep is a genre of electronic dance music originated from London.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre12.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Reggae</h2>
+										<p>Reggae evolved in the 1960s from Jazz. It's often refered to as Jamaican dance music</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre13.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Rap</h2>
+										<p>Rap is defined as spoken or chanted rythming lyrics.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre6.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Blues</h2>
+										<p>Blues is a genre that originated in African-American communities in the USA.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre9.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Indie Rock</h2>
+										<p>Indie rock is a genre of alternative rock originated in UK.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre14.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Heavy Metal</h2>
+										<p>Metal is a genre of rock music that developed in the late 1960s.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre17.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Soul</h2>
+										<p>Soul music is a genre that originated in the USA in the 1950s.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre16.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Jazz</h2>
+										<p>Jazz is a genre of music that originated in African American communities.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre18.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Country</h2>
+										<p>Country music originated in Southern United States.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre19.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Electronic</h2>
+										<p>Electronic music employs electronic musical instruments and technology.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre10.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>House</h2>
+										<p>House music is a genre of electronic dance music that originated in the early 1980s.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre20.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Classical</h2>
+										<p>Classical music is art music produced or rooted in the traditions of Western music.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre22.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Rock</h2>
+										<p>Rock music is a music genre that originated as "rock and roll" in the 1950s.</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-3 genre-item">
+								<a class="genre">
+									<img class="img-responsive genre-image" src="img/genre21.jpg" alt="">
+									<div class="genre-gradient"></div>
+									<div class="genre-caption">
+										<h2>Hip-Hop</h2>
+										<p>Hip hop as music and culture formed during the 1970s in New York City.</p>
+									</div>
+								</a>
+							</div>
+						</div> <!-- end row -->            
 
-				</div> <!-- end container -->
-                
-                <div class="footer top-buffer">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-10 col-sm-10 col-lg-offset-2 col-sm-offset-1 info">
-                            <div class="col-lg-4 col-md-4 about">
-                                <h1>About CLOUD</h1>
-                                <p>CLOUD is an open source project. Fork or clone our repository on <a href="http://github.com/leoResc/CLOUD.git" class="green bold" target="_blank">github.com</a>.<br>Build your own CLOUD, create events and let your guests decide which music shall be played next on your party.</p>
-                            </div>
-                            <div class="col-lg-4 col-md-4">
-                                <h1>Deployment</h1>
-                                <p>CLOUD can be deployed on any webserver which supports Java web applications.<br> Follow <a href="http://blog.licua.de/?p=570" class="green bold"  target="_blank">these instructions</a> in order to deploy CLOUD on your own server.</p>
-                            </div>
-                            <div class="col-lg-4 col-md-4 contact">
-                                <h1>Contact</h1>
-                                <p>Visit our blog on <a href="http://blog.licua.de" class="green bold"  target="_blank">blog.licua.de</a> to find out more about CLOUD and it's technical background.<br>You're having problems or need help? You can write us an <a href="mailto:&#099;&#108;&#111;&#117;&#100;&#064;&#108;&#105;&#099;&#117;&#097;&#046;&#100;&#101;" class="green bold">email</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+					</div> <!-- end container -->
+					
+					<div class="footer top-buffer">
+						<div class="row">
+							<div class="col-lg-8 col-md-10 col-sm-10 col-lg-offset-2 col-sm-offset-1 info">
+								<div class="col-lg-4 col-md-4 about">
+									<h1>About CLOUD</h1>
+									<p>CLOUD is an open source project. Fork or clone our repository on <a href="http://github.com/leoResc/CLOUD.git" class="green bold" target="_blank">github.com</a>.<br>Build your own CLOUD, create events and let your guests decide which music shall be played next on your party.</p>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<h1>Deployment</h1>
+									<p>CLOUD can be deployed on any webserver which supports Java web applications.<br> Follow <a href="http://blog.licua.de/?p=570" class="green bold"  target="_blank">these instructions</a> in order to deploy CLOUD on your own server.</p>
+								</div>
+								<div class="col-lg-4 col-md-4 contact">
+									<h1>Contact</h1>
+									<p>Visit our blog on <a href="http://blog.licua.de" class="green bold"  target="_blank">blog.licua.de</a> to find out more about CLOUD and it's technical background.<br>You're having problems or need help? You can write us an <a href="mailto:&#099;&#108;&#111;&#117;&#100;&#064;&#108;&#105;&#099;&#117;&#097;&#046;&#100;&#101;" class="green bold">email</a>.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div> <!-- end wrapper -->
+				
+				<div class="visible-xs" id="mobile"></div>
+				
+			</div> <!-- end parallax-base -->
 			
-			</div> <!-- end wrapper -->
-			
-			<div class="visible-xs" id="mobile"></div>
-			
-		</div> <!-- end parallax-base -->
-        
-	</div> <!-- end parallax -->
+		</div> <!-- end parallax -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-	<!-- jQuery UI -->
-	<script src="js/jquery-ui.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        // dropdown menu
-        $('.dropdown').click(function() {
-            $('.dropdownmenu').toggle('slide', { direction: 'up', easing: 'easeInOutExpo'}, 1000);
-        });
-        /* parallax effect
-        if ($('#mobile').is(':hidden')) {
-            var $begin = window.pageYOffset;
-            $(window).scroll(function() {
-                var $end = window.pageYOffset;
-                console.log($begin, $end);
-                $('.header').animate({top: '+=' + (($end - $begin) / 2) + 'px'}, 0);
-                $begin = window.pageYOffset;
-            });        
-        }*/
-        //$('.header + img').delay(1000).animate({top: '30px'}, 1000);
-        // voting
-        $('[class*="glyphicon-heart"]').click(function() {
-            $(this).toggleClass('glyphicon-heart-empty glyphicon-heart');    
-        });
-        
-    </script>
-</body>
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery UI -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			// dropdown menu
+			$('.dropdown').click(function() {
+				$('.dropdownmenu').toggle('slide', { direction: 'up', easing: 'easeInOutExpo'}, 1000);
+			});
+			/* parallax effect
+			if ($('#mobile').is(':hidden')) {
+				var $begin = window.pageYOffset;
+				$(window).scroll(function() {
+					var $end = window.pageYOffset;
+					console.log($begin, $end);
+					$('.header').animate({top: '+=' + (($end - $begin) / 2) + 'px'}, 0);
+					$begin = window.pageYOffset;
+				});        
+			}*/
+			//$('.header + img').delay(1000).animate({top: '30px'}, 1000);
+			// voting
+			$('[class*="glyphicon-heart"]').click(function() {
+				$(this).toggleClass('glyphicon-heart-empty glyphicon-heart');    
+			});
+			
+		</script>
+	</body>
 </html>
