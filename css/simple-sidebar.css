@@ -749,8 +749,22 @@ span.orderby {
     font-size: 16px;
 }
 
-span.orderby > select {
-    outline: 0;
-    border-color: #38B89F;
-    color: #676A6C;
+.dropdown-menu > .active > a {
+    background-color: #19AA8E;
+}
+
+.dropdown-menu > .active > a:hover {
+    background-color: #24C8A8;
+}
+
+a.song-info {
+    padding-right: 15px;
+}
+
+a.song-info:hover {
+    color: #1C84C6;
+}
+
+a.song-delete, a.song-info {
+    cursor: pointer;
 }

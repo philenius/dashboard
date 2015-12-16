@@ -16,6 +16,8 @@
 		<link href="css/simple-sidebar.css" rel="stylesheet">
 		<!-- Dropzone CSS -->
 		<link href="css/dropzone.min.css" rel="stylesheet">
+		<!-- WebUI-Popover CSS -->
+		<link href="css/jquery.webui-popover.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -152,225 +154,316 @@
 										<div class="col-lg-12">
 											<ul class="list-group flip" id="allSongs">
 												<li class="list-group-item">Coldplay - Always In My Head
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('0')" id="0" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true">
+															</span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Magic
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('1')" id="1" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Ink
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('2')" id="2" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - True Love
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('3')" id="3" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Midnight
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('4')" id="4" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Another's Arms
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('5')" id="5" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Oceans
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('6')" id="6" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - A Sky Full of Stars
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('7')" id="7" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Love Runs Out
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('8')" id="8" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true">
+															</span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - If I Lose Myself
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('9')" id="9" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Feel Again
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('10')" id="10" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Preacher
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('11')" id="11" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Burning Bridges
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('12')" id="12" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Life In Color
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('13')" id="13" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Au Revoir
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li><li class="list-group-item">Coldplay - Always In My Head
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('14')" id="14" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
+												</li>
+												<li class="list-group-item">Coldplay - Always In My Head
+																									<span class="pull-right">
+														<a onmouseover="javascript:songInfo('15')" id="15" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Magic
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+																									<span class="pull-right">
+														<a onmouseover="javascript:songInfo('16')" id="16" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Ink
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('17')" id="17" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - True Love
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('18')" id="18" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Midnight
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('19')" id="19" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Another's Arms
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('20')" id="20" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - Oceans
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('21')" id="21" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">Coldplay - A Sky Full of Stars
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('22')" id="22" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Love Runs Out
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('23')" id="23" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - If I Lose Myself
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('24')" id="24" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Feel Again
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('25')" id="25" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Preacher
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('26')" id="26" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Burning Bridges
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('27')" id="27" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Life In Color
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('28')" id="28" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 												<li class="list-group-item">One Republic - Au Revoir
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li><li class="list-group-item">Coldplay - Always In My Head
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('29')" id="29" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
-												<li class="list-group-item">Coldplay - Magic
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Ink
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - True Love
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Midnight
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Another's Arms
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Oceans
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - A Sky Full of Stars
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Love Runs Out
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - If I Lose Myself
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Feel Again
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Preacher
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Burning Bridges
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Life In Color
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Au Revoir
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li><li class="list-group-item">Coldplay - Always In My Head
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Magic
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Ink
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - True Love
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Midnight
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Another's Arms
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Oceans
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - A Sky Full of Stars
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Love Runs Out
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - If I Lose Myself
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Feel Again
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Preacher
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Burning Bridges
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Life In Color
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Au Revoir
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li><li class="list-group-item">Coldplay - Always In My Head
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Magic
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Ink
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - True Love
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Midnight
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Another's Arms
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - Oceans
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">Coldplay - A Sky Full of Stars
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Love Runs Out
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - If I Lose Myself
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Feel Again
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Preacher
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Burning Bridges
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Life In Color
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
-												</li>
-												<li class="list-group-item">One Republic - Au Revoir
-													<a href="#" class="grey"><span class="glyphicon glyphicon-trash pull-right" aria-hidden="true"></span></a>
+												<li class="list-group-item">Coldplay - Always In My Head
+													<span class="pull-right">
+														<a onmouseover="javascript:songInfo('30')" id="30" class="song-info grey">
+															<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+														</a>
+														<a href="javascript:" class="song-delete grey">
+															<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+														</a>
+													</span>
 												</li>
 											</ul>
 										</div>
@@ -395,6 +488,8 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Dropzone -->
 		<script src="js/dropzone.min.js"></script>
+		<!-- WebUI-Popover -->
+		<script src="js/jquery.webui-popover.min.js"></script>
 		<script>
 			// sidebar
 			$('#menu-toggle').click(function (e) {
@@ -441,6 +536,16 @@
 				$order = $('#orderby').val();
 				console.log($order);
 			});
+			// Info about song
+			function songInfo($id) {
+				$element = $('#' + $id);
+				$element.webuiPopover({ placement:'left',
+										title:'Song info',
+										content: 'Artist: Artist No. ' + $id + '<br>' + 'Title: Title No. ' + $id + '<br>' + 'Genre: Pop' + '<br>' + 'Duration: 4:30' + '<br>',trigger: 'hover'});
+				$element.webuiPopover('show');
+			}
+			$('h1').webuiPopover({ placement:'left',
+										title:'Song info', trigger: 'hover'}).webuiPopover('show');
 		</script>
 	</body>
 </html>
